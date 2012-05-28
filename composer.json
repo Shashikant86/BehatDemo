@@ -1,0 +1,15 @@
+{
+    "require": {
+        "behat/behat": "2.4@stable",
+        "behat/mink-extension": "dev-master",
+
+        "fabpot/goutte": "*",
+        "alexandresalome/php-selenium": "*",
+        "instaclick/php-webdriver": "*"
+    },
+
+    "config": {
+        "bin-dir": "bin"
+    }
+}
+
