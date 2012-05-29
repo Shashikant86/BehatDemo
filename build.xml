@@ -1,0 +1,15 @@
+<project name="behat" basedir=".">
+  
+   <target name="run">
+    <delete dir="${basedir}/report" />
+      <mkdir dir="${basedir}/report"/>
+      <parallel>
+      <antcall target="behat"></antcall>
+     </parallel>
+  </target>
+  <target name="behat">
+    <exec dir="${basedir}" executable="php" failonerror="true">
+    <arg line= "bin/behat -f html --out report/report.html"/>
+    </exec>
+  </target>
+</project>
