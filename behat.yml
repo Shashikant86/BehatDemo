@@ -13,3 +13,18 @@ subcontexts:
   context:
     class:      'SubContext'
 
+
+
+saucelabs:
+  context:
+    class:  'FeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+      selenium2:
+        browser: iexplore
+        wd_host: Username:APIkey@ondemand.saucelabs.com/wd/hub
+        capabilities: { "platform": "VISTA", "browser": "iexplore", "version": "9"}
+
+
+
+
