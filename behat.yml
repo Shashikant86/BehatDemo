@@ -15,16 +15,34 @@ subcontexts:
 
 
 
-saucelabs:
+Webdriver-saucelabs:
   context:
     class:  'FeatureContext'
   extensions:
     Behat\MinkExtension\Extension:
       selenium2:
         browser: iexplore
-        wd_host: Username:APIkey@ondemand.saucelabs.com/wd/hub
+        wd_host: username:apikey@ondemand.saucelabs.com/wd/hub
         capabilities: { "platform": "VISTA", "browser": "iexplore", "version": "9"}
 
 
 
-
+Selenium-saucelabs2:
+  context:
+    class:  'FeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url:  'http://saucelabs.com/'
+      javascript_session:  'selenium'
+      selenium:
+        host: ondemand.saucelabs.com
+        port: 80
+        browser: >
+          {
+            "username":         "username",
+            "access-key":       "apikey",
+            "browser":          "firefox",
+            "browser-version":  "7",
+            "os":               "Windows 2003",
+            "name":             "Testing Selenium with Behat"
+          }  

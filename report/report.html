@@ -436,40 +436,41 @@ I need see blogs<br />
 <span class="path">FeatureContext::visit()</span>
 </div>
 </li>
-<li class="passed">
+<li class="failed">
 <div class="step">
 <span class="keyword">When </span>
-<span class="text">I fill in "<strong class="passed_param">s</strong>" with "<strong class="passed_param">chips</strong>"</span>
+<span class="text">I fill in "<strong class="failed_param">s</strong>" with "<strong class="failed_param">chips</strong>"</span>
 <span class="path">FeatureContext::fillField()</span>
 </div>
+<pre class="backtrace">Form field with id|name|label|value &quot;s&quot; not found.</pre>
 </li>
-<li class="passed">
+<li class="skipped">
 <div class="step">
 <span class="keyword">And </span>
-<span class="text">I press "<strong class="passed_param">Search</strong>"</span>
+<span class="text">I press "<strong class="skipped_param">Search</strong>"</span>
 <span class="path">FeatureContext::pressButton()</span>
 </div>
 </li>
-<li class="passed">
+<li class="skipped">
 <div class="step">
 <span class="keyword">Then </span>
-<span class="text">I should see "<strong class="passed_param">No Posts found</strong>"</span>
+<span class="text">I should see "<strong class="skipped_param">No Posts found</strong>"</span>
 <span class="path">FeatureContext::assertPageContainsText()</span>
 </div>
 </li>
 </ol>
 </div>
 </div>
-<div class="summary passed">
+<div class="summary failed">
 <div class="counters">
 <p class="scenarios">
-3 scenarios (<strong class="passed">3 passed</strong>)
+3 scenarios (<strong class="passed">2 passed</strong>, <strong class="failed">1 failed</strong>)
 </p>
 <p class="steps">
-11 steps (<strong class="passed">11 passed</strong>)
+11 steps (<strong class="passed">8 passed</strong>, <strong class="skipped">2 skipped</strong>, <strong class="failed">1 failed</strong>)
 </p>
 <p class="time">
-0m19.891s
+0m23.306s
 </p>
 </div>
 <div class="switchers">
