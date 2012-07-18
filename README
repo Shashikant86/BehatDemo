@@ -15,7 +15,7 @@ $php composer.phar install
 
 Download Selenium Server and launch server 
 
-$ java -jar selenium-server-standalone-2.21.0.jar
+$ java -jar selenium-server-standalone-2.24.0.jar
 
 
 Now to launch Behat, just run:
@@ -23,3 +23,56 @@ Now to launch Behat, just run:
 $./bin/behat
 
 Watch The Test running in the browser. 
+
+To Run tests on Sauce Labs: 
+
+You need to create account with SauceLabs https://saucelabs.com/signup 
+Once registered you will have username and API key. 
+
+Web-Driver (selenium2) Tests: 
+
+update behat.yml and 'Webdriver-saucelabs' profile. 
+Change "wd_host: username:apikey@ondemand.saucelabs.com/wd/hub" with your username and Password. 
+
+
+And Run 
+
+$./bin/behat -p Webdriver-saucelabs
+
+You will see test running on SauceLabs https://saucelabs.com/jobs  
+
+
+Selenium1 driver Tests: 
+
+update behat.yml and 'Selenium-saucelabs2' profile. 
+"username":         "username",
+"access-key":       "apikey", with your username and Password. 
+
+
+And Run 
+
+$./bin/behat -p Selenium-saucelabs2
+
+You will see test running on SauceLabs https://saucelabs.com/jobs  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
