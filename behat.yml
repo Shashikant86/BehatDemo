@@ -7,15 +7,22 @@ default:
       javascript_session:  'selenium2'
       goutte:              ~
       selenium2: 
-        
 
 subcontexts:
   context:
     class:      'SubContext'
 
+phantomjs:
+  context:
+      class:  'FeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url: 'http://saucelabs.com/'
+      goutte: ~
+      selenium2:
+        wd_host: "http://localhost:8643/wd/hub" 
 
-
-Webdriver-saucelabs:
+sauce:
   context:
     class:  'FeatureContext'
   extensions:
@@ -27,7 +34,7 @@ Webdriver-saucelabs:
 
 
 
-Selenium-saucelabs2:
+sauce-rc:
   context:
     class:  'FeatureContext'
   extensions:

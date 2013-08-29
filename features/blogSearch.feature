@@ -5,10 +5,10 @@ Feature: Blog Search
 
 @javascript
 Scenario: Search Behat Blogs 
-Given I am on "/blog"
-When I fill in "s" with "behat"
-And I press "Search"
-Then I should see "Adding Sauce To Behat"
+  Given I am on "/blog"
+  When I fill in "s" with "behat"
+  And I press "Search"
+  Then I should see "Adding Sauce To Behat"
 
 
 
