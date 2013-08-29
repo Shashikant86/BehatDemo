@@ -1,11 +1,9 @@
 #Usage
 
-##Clone this repo:
+##Clone this repo
 
-
-      $ git clone git@github.com:Shashikant86/BehatDemo.git
-      $ cd BehatDemo
-
+        $ git clone git@github.com:Shashikant86/BehatDemo.git
+        $ cd BehatDemo
 
 
 Now install Behat, Mink, MinkExtension and their dependencies with composer:
@@ -38,11 +36,14 @@ Watch The Test running in the firefox browser. if you want to add more browsers 
 
 ## Running Test With PahntomJS Driver 
 
-  Start PhantomJS 
-          $ phantomjs --webdriver=8643
-          $./bin/behat -p phantomjs
-             
+Install PhantomJS, This will start Web-Driver at port 8643
+ Now run Behat with phantomjs profile 
 
+         $ brew install phantomJS
+         $ phantomjs --webdriver=8643
+         $ .bin/behat -p phantomjs
+         
+         
 
 ##To Run tests on Sauce Labs: 
 
