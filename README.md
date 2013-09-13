@@ -52,7 +52,7 @@ Once registered you will have username and API key.
 
 Web-Driver (selenium2) Tests: 
 
-update behat.yml and 'Webdriver-saucelabs' profile. 
+update behat.yml and 'sauce' profile. 
 Change "wd_host: username:apikey@ondemand.saucelabs.com/wd/hub" with your username and Password. 
 
 
@@ -65,7 +65,7 @@ You will see test running on SauceLabs https://saucelabs.com/jobs
 
 Selenium1 driver Tests: 
 
-update behat.yml and 'Selenium-saucelabs2' profile. 
+update behat.yml and 'sauce-rc' profile. 
 "username":         "username",
 "access-key":       "apikey", with your username and Password. 
 
